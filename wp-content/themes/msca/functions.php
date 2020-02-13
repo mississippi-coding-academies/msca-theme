@@ -14,13 +14,21 @@ add_action('init', 'register_menus');
 
 add_filter( 'manage_edit-student_columns', 'my_edit_student_columns' ) ;
 function my_edit_student_columns( $columns ) {
+    $old_columns = $columns;
+
     $columns = [
         'cb' => $columns['cb'],
         'image' => __( 'Image' ),
         'title' => __( 'Student Name' ),
         'active' => __( 'Active', 'msca' ),
-        'cohort' => __( 'Cohort', 'msca' ),
+        'cohort' => __( 'Cohort', 'msca' )
     ];
+
+    foreach ($old_columns as $key => $value) {
+        if (strpos($key, 'wpseo-') === 0) {
+            $columns[$key] = $value;
+        }
+    }
 
 	return $columns;
 }
