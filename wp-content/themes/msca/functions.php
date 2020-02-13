@@ -14,10 +14,13 @@ add_action('init', 'register_menus');
 
 add_filter( 'manage_edit-student_columns', 'my_edit_student_columns' ) ;
 function my_edit_student_columns( $columns ) {
-
-	$columns['title'] = __( 'Student Name' );
-	$columns['active'] = __( 'Active' );
-	$columns['cohort'] = __( 'Cohort' );
+    $columns = [
+        'cb' => $columns['cb'],
+        'image' => __( 'Image' ),
+        'title' => __( 'Student Name' ),
+        'active' => __( 'Active', 'msca' ),
+        'cohort' => __( 'Cohort', 'msca' ),
+    ];
 
 	return $columns;
 }
