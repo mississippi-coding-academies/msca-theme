@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-6 d-none d-lg-none d-md-block">
                     <div class="footer-map">
-                        <img href="/home" src="<?php echo get_template_directory_uri(); ?>/images/logo-white.png" alt="Logo">
+                        <img href="/" src="<?php echo get_template_directory_uri(); ?>/images/logo-white.png" alt="Logo">
                     </div>
                 </div>
                 <div class="col-sm-6 d-none d-lg-none d-md-block">

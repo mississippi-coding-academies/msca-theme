@@ -16,10 +16,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-sm-2 d-none d-md-block">
-                    <a href="/home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpeg" alt="Logo"></a>
+                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpeg" alt="Logo"></a>
                 </div>
                 <div class="col-sm-2 col-5 d-md-none">
-                    <a href="/home"><img src="<?php echo get_template_directory_uri(); ?>/images/mobilelogo.png" alt="Logo"></a>
+                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/mobilelogo.png" alt="Logo"></a>
                 </div>
                 <div class="col-sm-6 d-none d-lg-block d-md-block">
                     <div class="nav-menu">
