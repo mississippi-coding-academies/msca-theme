@@ -20,7 +20,7 @@
 <?php while(have_posts()) : the_post(); ?>
                         <article class="news-item">
                             <h2 class="h3"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-                            <?php the_content(); ?>
+                            <?php the_excerpt(); ?>
                         </article>
 <?php endwhile; ?>
                     </div>
