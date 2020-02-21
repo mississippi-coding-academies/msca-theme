@@ -19,7 +19,7 @@
                     <div class="col-12">
 <?php while(have_posts()) : the_post(); ?>
                         <article class="news-item">
-                            <h2><?php the_title(); ?></h2>
+                            <h2 class="h3"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
                             <?php the_content(); ?>
                         </article>
 <?php endwhile; ?>
