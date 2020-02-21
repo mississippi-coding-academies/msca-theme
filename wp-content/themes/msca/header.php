@@ -16,10 +16,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-sm-2 d-none d-md-block">
-                    <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpeg" alt="Logo"></a>
+                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpeg" alt="Logo"></a>
                 </div>
                 <div class="col-sm-2 col-5 d-md-none">
-                    <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/images/mobilelogo.png" alt="Logo"></a>
+                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/mobilelogo.png" alt="Logo"></a>
                 </div>
                 <div class="col-sm-6 d-none d-lg-block d-md-block">
                     <div class="nav-menu">
@@ -29,15 +29,15 @@
                                     <a href="#" onclick="dropDown(); changeIcon()" class="dropbtn" >The Academies <i id="caretChange" class="fa fa-caret-down"></i></a>
                                 </div>
                             </li>
-                            <li><a href="#">Students</a></li>
+                            <li><a href="/students">Students</a></li>
                             <li><a href="/news">News</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-4">
                     <div class="nav-btn">
-                        <a class="hide-hire-btn" href="hirelanding.html">Hire a Grad</a>
-                        <a href="applynow.html">Apply Now</a>
+                        <a class="hide-hire-btn" href="/hire">Hire a Grad</a>
+                        <a href="/apply-now">Apply Now</a>
                     </div>
                 </div>
                 <div class="col-sm-2 col-3">
@@ -52,11 +52,11 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <ul>
-                            <li><a href="aboutus.html">About Us</a> </li>
-                            <li><a href="alumni.html">Alumni</a></li>
-                            <li><a href="#">Our Values</a></li>
-                            <li><a href="#">Board of Directories</a></li>
-                            <li><a href="employerevals.html">Employer Evaluations</a></li>
+                            <li><a href="/about-us">About Us</a> </li>
+                            <li><a href="/alumni">Alumni</a></li>
+                            <li><a href="/principles-values">Our Values</a></li>
+                            <li><a href="/board-of-directors-officers">Board of Directories</a></li>
+                            <li><a href="/employer-evaluations">Employer Evaluations</a></li>
                         </ul>
                     </div>
                 </div>

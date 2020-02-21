@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-6 d-none d-lg-none d-md-block">
                     <div class="footer-map">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-white.png" alt="Logo">
+                        <img href="/" src="<?php echo get_template_directory_uri(); ?>/images/logo-white.png" alt="Logo">
                     </div>
                 </div>
                 <div class="col-sm-6 d-none d-lg-none d-md-block">
@@ -27,9 +27,9 @@
                     <div class="footer-map">
                         <p>Get Involved</p>
                         <ul>
-                            <li><a href="#">Apply</a> </li>
-                            <li><a href="#">Hire a Graduate</a> </li>
-                            <li><a href="#">Donate</a> </li>
+                            <li><a href="/apply-now">Apply</a> </li>
+                            <li><a href="/hire">Hire a Graduate</a> </li>
+                            <li><a href="/donate">Donate</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -37,11 +37,11 @@
                     <div class="footer-map">
                         <p>Learn More</p>
                         <ul>
-                            <li><a href="#">Jackson</a> </li>
-                            <li><a href="#">Starkville</a> </li>
-                            <li><a href="#">Veterans Code</a> </li>
-                            <li><a href="#">Our Alumni</a> </li>
-                            <li><a href="#">News</a> </li>
+                            <li><a href="/jackson-curriculum">Jackson</a> </li>
+                            <li><a href="/starkville-curriculum">Starkville</a> </li>
+                            <li><a href="/veterans-code">Veterans Code</a> </li>
+                            <li><a href="/alumni">Our Alumni</a> </li>
+                            <li><a href="/news">News</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                         <p>Jackson Location</p>
                         <ul>
                             <li>769-300-1534</li>
-                            <li> <a href="#">Herbert Brown</a> </li>
+                            <li><a href="#">Herbert Brown</a></li>
                             <li>121 North State St, Suite #500 Jackson, MS 39201</li>
                         </ul>
                     </div>
@@ -60,7 +60,7 @@
                         <p>Starkville Location</p>
                         <ul>
                             <li>662-325-2756</li>
-                            <li> <a href="#">Dr. Sarah Lee</a> </li>
+                            <li><a href="#">Dr. Sarah Lee</a></li>
                             <li>MSU Research Park 100 Research Blvd Starkville, MS 39759</li>
                         </ul>
                     </div>
