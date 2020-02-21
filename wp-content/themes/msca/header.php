@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-4 col-4">
                     <div class="nav-btn">
-                        <a class="hide-hire-btn" href="/hire">Hire a Grad</a>
+                        <a class="hide-hire-btn" href="/hire-our-graduates">Hire a Grad</a>
                         <a href="/apply-now">Apply Now</a>
                     </div>
                 </div>

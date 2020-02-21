@@ -10,8 +10,8 @@
                     <h1>Still searching for a career path? This could be it.</h1>
                     <div class="left-border1">
                         <p>Join the Mississippi Coding Academies to become a trained junior developer in just 11 months—at no cost to you.</p>
-                        <a class="hero-apply" href="#">I WANT TO APPLY</a>
-                        <a class="hero-learn" href="#">Learn more about us</a>
+                        <a class="hero-apply" href="/apply-now">I WANT TO APPLY</a>
+                        <a class="hero-learn" href="/about-us">Learn more about us</a>
                         <div class="left-border2"></div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="#">HIRE A CODING ACADEMY GRADUATE</a>
+                    <a href="/hire-our-graduates">HIRE A CODING ACADEMY GRADUATE</a>
                 </div>
             </div>
         </div>
@@ -130,16 +130,16 @@
                         <p>We teach our students how to work on <span class="acad-bold">both sides of coding</span> for the web.</p>
                         <p>Everything you see online? That’s the front-end. How it all works? That’s the back-end.</p>
                         <p>You’ll learn both, and that will make you a <span class="acad-bold">full-stack developer</span> . No matter what you end up being hired for—you’ll be prepared.</p>
-                        <a class="acad-info-btn" href="#">APPLY</a>
-                        <a class="acad-info-btn" href="#">MEET OUR ALUMNI</a>
+                        <a class="acad-info-btn" href="/apply-now">APPLY</a>
+                        <a class="acad-info-btn" href="/alumni">MEET OUR ALUMNI</a>
                         <div class="skim-border1">
-                            <a class="acad-prev d-none d-lg-block" href="#">Click For Previous</a>
+                            <!-- <a class="acad-prev d-none d-lg-block" href="#">Click For Previous</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <div class="key-mouse"></div>
-                    <a class="acad-next d-none d-lg-block" href="#">Click For Next</a>
+                    <!-- <a class="acad-next d-none d-lg-block" href="#">Click For Next</a> -->
                 </div>
                 <div class="col-sm-4 d-none d-lg-block">
                     <div class="cost-info-bg">
@@ -232,7 +232,7 @@
                     <p>The Mississippi Coding Academies is a 501(c)3 non-profit. Donations make this program possible and produce skilled workers for the state of Mississippi!</p>
                 </div>
                 <div class="col-lg-5 col-sm-12">
-                    <a href="#">MAKE A DONATION</a>
+                    <a href="/donate">MAKE A DONATION</a>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/paymentopt.png" alt="cards">
                 </div>
             </div>

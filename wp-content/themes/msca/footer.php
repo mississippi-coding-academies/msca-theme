@@ -28,7 +28,7 @@
                         <p>Get Involved</p>
                         <ul>
                             <li><a href="/apply-now">Apply</a> </li>
-                            <li><a href="/hire">Hire a Graduate</a> </li>
+                            <li><a href="/hire-our-graduates">Hire a Graduate</a> </li>
                             <li><a href="/donate">Donate</a> </li>
                         </ul>
                     </div>
