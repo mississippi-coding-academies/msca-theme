@@ -43,6 +43,7 @@
 
 global $post;
 $args = [
+    'numberposts' => -1,
     'post_type' => 'student',
     'meta_query' => [
         [
