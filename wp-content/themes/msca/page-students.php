@@ -58,8 +58,8 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 <!-- OPEN STUDENT -->
                 <div class="col-3">
                     <div class="alumni-box">
-                        <div class="alumni-photo-1">
-                            <img src="https://via.placeholder.com/100x100" alt="placeholder image">
+                        <div class="alumni-photo">
+                            <img src="https://via.placeholder.com/230x180" alt="placeholder image">
                         </div>
                         <div class="row">
                             <div class="col-8">
