@@ -52,7 +52,7 @@ $args = [
             'compare' => '='
         ],
         [
-            'key' => 'active',
+            'key' => 'alumni',
             'value' => '0',
             'compare' => '='
         ]        
