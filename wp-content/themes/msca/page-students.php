@@ -50,7 +50,12 @@ $args = [
             'key' => 'active',
             'value' => '1',
             'compare' => '='
-        ]
+        ],
+        [
+            'key' => 'active',
+            'value' => '0',
+            'compare' => '='
+        ]        
     ]
 ];
 
