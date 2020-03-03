@@ -20,7 +20,7 @@
                 <div class="col-6">
                     <form action="#">
                         <label for="location">Filter Location</label>
-                        <input type="checkbox" name="Jackson" id="" value="Jackson" checked>Jackson
+                        <input type="checkbox" name="Jackson" id="" value="Jackson">Jackson
                         <input type="checkbox" name="Starkville" id="" value="Starkville">Starkville
                     </form>
                 </div>
