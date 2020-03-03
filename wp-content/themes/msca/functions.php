@@ -21,6 +21,7 @@ function my_edit_student_columns( $columns ) {
         'image' => __( 'Image' ),
         'title' => __( 'Student Name' ),
         'active' => __( 'Active', 'msca' ),
+        'alumni' => __( 'Alumni', 'msca' ),
         'cohort' => __( 'Cohort', 'msca' )
     ];
 
@@ -43,6 +44,10 @@ function my_manage_student_columns( $column, $post_id ) {
 		case 'active' :
             echo get_post_meta( $post_id , 'active' , true ); 
             break;
+
+        case 'alumni' :
+            echo get_post_meta( $post_id , 'alumni' , true ); 
+            break;            
 
         case 'cohort' :
             echo get_post_meta( $post_id , 'cohort' , true ); 
