@@ -193,31 +193,40 @@
                 </div>
             </div>
             <div class="row">
+            <?php
+
+global $post;
+$args = [
+    'numberposts' => 4,
+    'post_type' => 'post'
+];
+
+$myposts = get_posts( $args );
+$count = 0;
+foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+    <?php if ($count == 0) : ?>
                 <div class="col-sm-6 middle-border">
                     <div class="head-news">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/headnews.png" alt="News-Photo">
-                        <p>Our Directors Win Mississippi Business Journal 2019 Top in Tech Award</p>
-                        <a href="#">Read More</a>
+                        <h3><?php the_title();?></h3>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">Read More</a>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="news-box-cont">
+    <?php else : ?>
                         <div class="news-box">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/news1.png" alt="News-Photo">
-                            <p>The Focus Group Visits Mississippi Coding Academies in Jackson</p>
-                            <a href="#">Read More</a>
+                            <h3><?php the_title();?></h3>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">Read More</a>
                         </div>
-                        <div class="news-box">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/news2.png" alt="News-Photo">
-                            <p>Guarav Somwanshi’s Visit to the Coding Academies</p>
-                            <a href="#">Read More</a>
-                        </div>
-                        <div class="news-box">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/news3.png" alt="News-Photo">
-                            <p>Mississippi Coding Academies Certify 2nd Cohort of Full-Stack Developers</p>
-                            <a href="#">Read More</a>
-                        </div>
-                        <a class="news-browse-all" href="#">BROWSE all News</a>
+    <?php endif; ?>
+<?php 
+$count++;
+endforeach; 
+wp_reset_postdata();
+?>
+                        <a class="news-browse-all" href="/news/">BROWSE all News</a>
                     </div>
                 </div>
             </div>
