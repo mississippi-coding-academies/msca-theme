@@ -1051,7 +1051,7 @@ Author: Bryce Mullican, Ryan Jones
 /* About us */
 .about-sub-header h2 {
     margin: 36.5px 0px;
-    text-align: center;
+    text-align: left;
     font-size: 36px;
     letter-spacing: 0;
     color: #008289;

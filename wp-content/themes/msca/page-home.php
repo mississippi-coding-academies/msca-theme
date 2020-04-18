@@ -177,8 +177,8 @@
                 <div class="col-lg-5 col-sm-12">
                     <div class="meet-coder-header">
                         <h2>Meet more of our junior coders & our MCA staff!</h2>
-                        <a href="#">JACKSON COHORT</a>
-                        <a href="#">STARKVILLE COHORT</a>
+                        <a href="/students">JACKSON COHORT</a>
+                        <a href="/students">STARKVILLE COHORT</a>
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@ $count++;
 endforeach; 
 wp_reset_postdata();
 ?>
-                        <a class="news-browse-all" href="/news/">BROWSE all News</a>
+                        <a class="news-browse-all" href="/news/">Browse All News</a>
                     </div>
                 </div>
             </div>
