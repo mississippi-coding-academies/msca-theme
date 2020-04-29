@@ -41,9 +41,7 @@ Author: Bryce Mullican, Ryan Jones
     margin-right: 10px;
     display: inline-block;
     padding: 7px;
-    background: #FFFFFF 0% 0% no-repeat;
-    border: 1px solid #D62839;
-    border-radius: 3px;
+    background: #D62839 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 .nav-btn a {
@@ -51,14 +49,16 @@ Author: Bryce Mullican, Ryan Jones
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: 0.8px;
-    color: #D62839;
+    letter-spacing: 0.8px;  
+    color: #ffffff;
     opacity: 1;
 }
 .nav-btn a:hover {
     text-decoration: none;
-    background: #D62839 0% 0% no-repeat padding-box;
-    color: #ffffff;
+    background: #FFFFFF 0% 0% no-repeat;
+    border: 1px solid #D62839;
+    border-radius: 3px;
+    color: #D62839;
 }
 .mobile-menu-btn {
     display: none;
@@ -135,6 +135,9 @@ Author: Bryce Mullican, Ryan Jones
     letter-spacing: 0.8px;
     color: #FFFFFF;
     opacity: 1;
+}
+.hero-apply:hover {
+    color: #FFFFFF;
 }
 .hero-learn {
     display: block;
