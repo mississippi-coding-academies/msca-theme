@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.meetcoderslider').slick({
     arrows: false,
     infinite: true,
-    dots: true,
+    dots: false,
     fade: true,
     autoplay: true,
     slidesToShow: 1,

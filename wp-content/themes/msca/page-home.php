@@ -164,9 +164,26 @@
                     <div class="meet-coder-card">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
-                                <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
-                                <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
+                                <div class="meetcoderslider">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
+                                    <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
+                                    <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
+                                </div>
+                                <div class="meetcoderslider">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
+                                    <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
+                                    <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
+                                </div>
+                                <div class="meetcoderslider">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
+                                    <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
+                                    <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
+                                </div>
+                                <div class="meetcoderslider">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
+                                    <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
+                                    <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -247,4 +264,7 @@ wp_reset_postdata();
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/slick/meetcoderslider.js"></script>
     <?php get_footer(); ?>
