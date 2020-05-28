@@ -964,7 +964,6 @@ Author: Bryce Mullican, Ryan Jones
 }
 .alumni-box {
     width: 235px;
-    height: 246px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 4px 6px #63676B59;
     border: 2px solid #2D3047;
@@ -1018,6 +1017,10 @@ Author: Bryce Mullican, Ryan Jones
     border: 1px solid #2D3047;
     border-radius: 2px 2px 0px 0px;
     opacity: 1;
+}
+.alumni-photo img {
+    max-width: 100%;
+    height: auto;
 }
 /* Footer Message */
 .footer-message {
