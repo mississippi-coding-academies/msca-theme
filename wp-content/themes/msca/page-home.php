@@ -233,7 +233,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                     <div class="news-box-cont">
     <?php else : ?>
                         <div class="news-box">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/news1.png" alt="News-Photo">
+                            <?php echo get_the_post_thumbnail( $post->ID, 'standard-horizontal' ); ?>
                             <h3><?php the_title();?></h3>
                             <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">Read More</a>
                         </div>
