@@ -224,7 +224,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
     <?php if ($count == 0) : ?>
                 <div class="col-sm-6 middle-border">
                     <div class="head-news">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/headnews.png" alt="News-Photo">
+                        <?php echo get_the_post_thumbnail( $post->ID, 'standard-horizontal' ); ?>
                         <h3><?php the_title();?></h3>
                         <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">Read More</a>
                     </div>
