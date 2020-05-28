@@ -1,11 +1,11 @@
-$(document).ready(function(){ 
+jQuery(function($) {
     $('.meetcoderslider').slick({
-    arrows: false,
-    infinite: true,
-    dots: false,
-    fade: true,
-    autoplay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1
+        arrows: false,
+        infinite: true,
+        dots: false,
+        fade: true,
+        autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 });
