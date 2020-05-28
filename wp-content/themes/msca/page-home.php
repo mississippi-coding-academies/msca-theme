@@ -46,18 +46,31 @@
         </div>
     </div>
     <!-- Featured News Bar -->
-    <div class="featnews-bar-rules">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <p>FEATURED NEWS: MCA Directors win Mississippi Business Journal 2019 Top in Tech Award</p>
-                </div>
-                <div class="col-sm-4">
-                    <a href="#">READ MORE</a>
+    <?php
+
+    $post_object = get_field('featured_news_item');
+    
+    if( $post_object ): 
+    
+        // override $post
+        $post = $post_object;
+        setup_postdata( $post ); 
+    
+        ?>
+        <div class="featnews-bar-rules">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>FEATURED NEWS: <?php the_title(); ?></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="<?php the_permalink(); ?>">READ MORE</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div>        
+        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+    <?php endif; ?>
     <!-- Grad Stories -->
     <div class="grad-header-rules">
         <div class="container">
