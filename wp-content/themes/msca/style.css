@@ -42,9 +42,8 @@ Author: Bryce Mullican, Ryan Jones
     display: inline-block;
     padding: 7px;
     background: #D62839 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-.nav-btn a {
+    border: 1px solid #fff;
+    border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
