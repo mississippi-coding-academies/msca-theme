@@ -1629,3 +1629,7 @@ Author: Bryce Mullican, Ryan Jones
 @media (max-width: 767px) {
     
 }
+
+.meetcoderslider {
+    overflow: hidden;
+}
