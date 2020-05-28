@@ -634,6 +634,8 @@ Author: Bryce Mullican, Ryan Jones
 .head-news img {
     border-radius: 4px 4px 0px 0px;
     opacity: 1;
+    max-width: 100%;
+    height: auto;
 }
 .head-news h3 {
     margin-top: 5px;
@@ -686,7 +688,7 @@ Author: Bryce Mullican, Ryan Jones
 }
 .news-box img {
     width: 127px;
-    height: 85px;
+    height: auto;
     float: right;
 }
 .news-box h3 {
