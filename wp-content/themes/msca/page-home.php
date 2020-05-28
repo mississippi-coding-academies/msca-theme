@@ -48,7 +48,7 @@
     <!-- Featured News Bar -->
     <?php
 
-    $post_object = get_field('featured_news_item');
+    $post_object = get_field('featured_news_item', 'options');
     
     if( $post_object ): 
     
