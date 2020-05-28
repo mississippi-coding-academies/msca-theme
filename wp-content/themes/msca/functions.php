@@ -53,6 +53,10 @@ function my_manage_student_columns( $column, $post_id ) {
             echo get_post_meta( $post_id , 'cohort' , true ); 
             break;
 
+        case 'image' :
+            echo get_the_post_thumbnail( $post_id, 'thumbnail');
+            break;
+
     }
 }
 

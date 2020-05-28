@@ -66,7 +66,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                     <div class="alumni-box">
                         <div class="alumni-photo">
                         <?php if ( has_post_thumbnail() ) : ?>
-                            <?php echo get_the_post_thumbnail( $post->ID, 'standard-standard-vertical' ); ?>
+                            <?php echo get_the_post_thumbnail( $post->ID, 'standard-vertical' ); ?>
                         <?php else :  ?>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/default_student.jpg" alt="Placeholder Student Photo">
                         <?php endif; ?>
