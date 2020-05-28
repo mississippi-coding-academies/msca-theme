@@ -1633,3 +1633,8 @@ Author: Bryce Mullican, Ryan Jones
 .meetcoderslider {
     overflow: hidden;
 }
+.news-item img {
+    max-width: 25%;
+    float: left;
+    margin-right: 15px;
+}
