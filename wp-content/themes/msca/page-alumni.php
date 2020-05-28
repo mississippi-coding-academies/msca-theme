@@ -65,7 +65,11 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                 <div class="col-3">
                     <div class="alumni-box">
                         <div class="alumni-photo">
-                            <img src="https://via.placeholder.com/230x180" alt="placeholder image">
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <?php echo get_the_post_thumbnail( $post->ID, 'standard-vertical' ); ?>
+                        <?php else :  ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/default_student.jpg" alt="Placeholder Student Photo">
+                        <?php endif; ?>
                         </div>
                         <div class="row">
                             <div class="col-8">
