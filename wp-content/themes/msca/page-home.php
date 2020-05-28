@@ -19,7 +19,7 @@
                     <div class="hero-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/hero.png" alt="Hero">
                         <div class="hero-student">
-                            <p>Student Name<br><span class="hero-local">JACKSON</span></p>
+                            <p>Shoncurra Redmond<br><span class="hero-local">JACKSON</span></p>
                         </div>               
                     </div>
                     <div class="code-bg-1">
