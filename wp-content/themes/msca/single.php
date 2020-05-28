@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1><?php the_title(); ?></h1>
+                    <h1>News</h1>
                 </div>
             </div>
         </div>
@@ -18,7 +18,10 @@
             <div class="about-sub-header">
                 <div class="row">
                     <div class="col-12">
-                        <?php the_content(); ?>
+                        <article>
+                            <h1><?php the_title(); ?></h1>
+                            <?php the_content(); ?>                        
+                        </article>
                     </div>
                 </div>
             </div>
