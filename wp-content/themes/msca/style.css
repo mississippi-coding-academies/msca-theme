@@ -625,7 +625,7 @@ Author: Bryce Mullican, Ryan Jones
 }
 .head-news {
     width: 452px;
-    height: 421px;
+    padding-bottom: 5px;
     background: #008289 0% 0% no-repeat padding-box;
     box-shadow: 0px 8px 15px #63676B59;
     border-radius: 4px;
