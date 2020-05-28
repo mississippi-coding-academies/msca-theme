@@ -55,3 +55,11 @@ function my_manage_student_columns( $column, $post_id ) {
 
     }
 }
+
+// This theme uses Featured Images (also known as post thumbnails) for per-post/per-page Custom Header images
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 250, 250, true );
+
+// Add image sizes as needed
+add_image_size( 'standard-vertical', 526, 670, true );
+add_image_size( 'standard-horizontal', 670, 526, true );
