@@ -1638,6 +1638,9 @@ Author: Bryce Mullican, Ryan Jones
     padding-bottom: 15px;
     border-bottom: 1px solid #ccc;
 }
+.news-item a {
+    color: #00a3ad;
+}
 .news-item:after {
     content: '';
     display: block;
