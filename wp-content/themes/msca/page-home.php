@@ -182,21 +182,6 @@
                                     <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
                                     <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
                                 </div>
-                                <div class="meetcoderslide">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
-                                    <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
-                                    <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
-                                </div>
-                                <div class="meetcoderslide">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
-                                    <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
-                                    <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
-                                </div>
-                                <div class="meetcoderslide">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
-                                    <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
-                                    <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
-                                </div>
                             </div>
                         </div>
                     </div>
