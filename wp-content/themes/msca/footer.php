@@ -50,7 +50,7 @@
                         <p>Jackson Location</p>
                         <ul>
                             <li>769-300-1534</li>
-                            <li> <a href="#">Herbert Brown</a> </li>
+                            <li> <a href="mailto:Herbert.brown@mscoding.org">Herbert Brown</a> </li>
                             <li>121 North State St, Suite #500 Jackson, MS 39201</li>
                         </ul>
                     </div>
@@ -60,7 +60,7 @@
                         <p>Starkville Location</p>
                         <ul>
                             <li>662-325-2756</li>
-                            <li> <a href="#">Dr. Sarah Lee</a> </li>
+                            <li> <a href="mailto:sblee@cse.msstate.edu">Dr. Sarah Lee</a> </li>
                             <li>MSU Research Park 100 Research Blvd Starkville, MS 39759</li>
                         </ul>
                     </div>
