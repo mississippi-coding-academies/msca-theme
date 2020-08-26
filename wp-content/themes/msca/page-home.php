@@ -29,7 +29,7 @@
                         <div class="col-sm-9"></div>
                         <div class="col-sm-3">
                             <div class="code-bg-2">
-                                <p>body { background-col-smor:#FFFFFF; font-family: “Montserrat”, sans-serif; font-weight: normal; }</p>
+                                <p>body { background-col-smor:#FFFFFF; font-family: “Montserrat”, sans-serif; font-weight: normal; } body { background-col-smor:#FFFFFF; font-family: “Montserrat”, sans-serif; font-weight: normal; } body { background-col-smor:#FFFFFF; font-family: “Montserrat”, sans-serif; font-weight: normal; }</p>
                             </div>
                         </div>
                     </div>
@@ -61,10 +61,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
-                        <p>FEATURED NEWS: <?php the_title(); ?></p>
+<!--                         <p>FEATURED NEWS: <?php the_title(); ?></p> -->
                     </div>
                     <div class="col-sm-4">
-                        <a href="<?php the_permalink(); ?>">READ MORE</a>
+<!--                         <a href="<?php the_permalink(); ?>">READ MORE</a> -->
                     </div>
                 </div>
             </div>
@@ -81,19 +81,19 @@
             </div>
         </div>
     </div>
-    <div class="grad-slider-bg">
+<!--     <div class="grad-slider-bg">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="grad-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/gavmask.png" alt="grad-photo">
+                        <img src="<?php// echo get_template_directory_uri(); ?>/images/gavmask.png" alt="grad-photo">
                         <p class="grad-card-head"><span class="grad-name">Gavin Jones</span> <br>Company Name</p>
                         <p class="grad-card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.  <a href="#">#mcasuccessstory</a></p>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="grad-card grad-card-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/vanmask.png" alt="grad-photo">
+                        <img src="<?php// echo get_template_directory_uri(); ?>/images/vanmask.png" alt="grad-photo">
                         <p class="grad-card-head"><span class="grad-name">Vanessa Dillon</span> <br>Company Name</p>
                         <p class="grad-card-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.  <a href="#">#mcasuccessstory</a></p>
                     </div>
@@ -107,7 +107,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+	<?php echo do_shortcode('[slide-anything id=392]'); ?>
     <!-- Grad Hirers -->
     <div class="grad-hirer-rules">
         <div class="container">
@@ -118,7 +119,7 @@
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/grad3.svg" alt="">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/grad4.svg" alt="">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/grad5.png" alt="">
-                    <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/grad6.png" alt="">
+                    <img class="img-responsive" src="/wp-content/uploads/2020/08/comcastlogogrey.png" alt="">
                 </div>
             </div>
             <div class="row">
@@ -134,8 +135,9 @@
         </div>
     </div>
     <!-- Academy Info -->
-    <div class="acad-info-rules">
-        <div class="container">
+	<?php echo do_shortcode('[slide-anything id=399]'); ?>
+
+<!--     <div class="acad-info-rules">
             <div class="row">
                 <div class="col-sm-6">
                     <h2>No skimming here. You’ll learn to code from front to back.</h2>
@@ -145,15 +147,15 @@
                         <p>You’ll learn both, and that will make you a <span class="acad-bold">full-stack developer</span> . No matter what you end up being hired for—you’ll be prepared.</p>
                         <a class="acad-info-btn" href="/apply-now">APPLY</a>
                         <a class="acad-info-btn" href="/alumni">MEET OUR ALUMNI</a>
-                        <div class="skim-border1">
+                        <div class="skim-border1"> -->
                             <!-- <a class="acad-prev d-none d-lg-block" href="#">Click For Previous</a> -->
-                        </div>
+<!--                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <div class="key-mouse"></div>
+                    <div class="key-mouse"></div> -->
                     <!-- <a class="acad-next d-none d-lg-block" href="#">Click For Next</a> -->
-                </div>
+<!--                 </div>
                 <div class="col-sm-4 d-none d-lg-block">
                     <div class="cost-info-bg">
                         <div class="cost-info">
@@ -167,18 +169,19 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+    </div> -->
     <!-- Meet Coders/Staff -->
-    <div class="meet-coder">
+   <div class="meet-coder">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-sm-12">
+				<div class="col-lg-7 col-sm-12">
+				<?php echo do_shortcode('[slide-anything id=398]'); ?>
+<!--                 
                     <div class="meet-coder-card">
                         <div class="row">
                             <div class="col-lg-12 meetcoderslider">
                                 <div class="meetcoderslide">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
+                                    <img src="<?php// echo get_template_directory_uri(); ?>/images/codeport.png" alt="coder-portrait">
                                     <p class="coder-quote">I believed that my interest in coding could become a career, and I felt that The MS Coding Academies could help cultivate and develop me into the developer I hope to become.</p>
                                     <p class="meet-coder-name">- Christopher Lavine <br><span class="meet-coder-local">JACKSON</span></p>
                                 </div>
@@ -188,7 +191,8 @@
                     <div class="meet-slider-dots">
                         <p>* * * *</p>
                     </div>
-                </div>
+                </div> -->
+				</div>
                 <div class="col-lg-5 col-sm-12">
                     <div class="meet-coder-header">
                         <h2>Meet more of our junior coders & our MCA staff!</h2>
@@ -198,7 +202,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+	
     <!-- News -->
     <div class="latest-news-rules">
         <div class="container">
@@ -264,13 +269,10 @@ wp_reset_postdata();
                     <p>The Mississippi Coding Academies is a 501(c)3 non-profit. Donations make this program possible and produce skilled workers for the state of Mississippi!</p>
                 </div>
                 <div class="col-lg-5 col-sm-12">
-                    <a href="/donate">MAKE A DONATION</a>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="charset" value="utf-8"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="mscoding@mscoding.org"><input type="hidden" name="item_name" value="Donate"><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="notify_url" value="https://mscodestage.wpengine.com/?wp_paypal_ipn=1"><input type="hidden" name="bn" value="WPPayPal_Donate_WPS_US"><input type="image" src="/wp-content/uploads/2020/08/paypal-donate-button-1.png" border="0" name="submit"></form>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/paymentopt.png" alt="cards">
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/slick/meetcoderslider.js"></script>
     <?php get_footer(); ?>

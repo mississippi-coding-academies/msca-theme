@@ -4,9 +4,41 @@ Author: Bryce Mullican, Ryan Jones
 */
 
 /* Nav */
+.owl-carousel .owl-stage-outer {
+	margin-bottom: 100px
+	width: 100% !important;
+    max-height: 550px;
+}
+
+
+div#slider_398_slide01, 
+div#slider_398_slide02, 
+div#slider_398_slide03,
+div#slider_392_slide01, 
+div#slider_399_slide01, 
+div#slider_399_slide02, 
+div#slider_399_slide03 {
+	padding: 0px !important;
+} 
+
+div#slider_392_slide01, div#slider_392_slide02, div#slider_392_slide03{
+	padding: 2% 0% 5% 0% !Important;
+}
+
+#slider_399 .owl-dots {
+	display: none !important;
+}
+
+.owl-pagination-true {
+	margin-bottom: 0px !important;
+}
+
+.grad-hirer-rules {
+	margin-top: 50px
+}
 .nav-rules {
     position: sticky;
-    top: 0;
+    top: 0px;
     height: 106px;
     background: rgba(255, 255, 255, 0.95);
     z-index: 3;
@@ -14,7 +46,7 @@ Author: Bryce Mullican, Ryan Jones
 .nav-rules img {
     margin: 22.85px 0;
     width: 156px;
-    height: 59px;
+    height: 63px;
     opacity: 1;
 }
 .nav-menu ul {
@@ -41,23 +73,22 @@ Author: Bryce Mullican, Ryan Jones
     margin-right: 10px;
     display: inline-block;
     padding: 7px;
-    background: #D62839 0% 0% no-repeat padding-box;
-    border: 1px solid #fff;
+    background: #FFFFFF 0% 0% no-repeat;
+    border: 1px solid #D62839;
     border-radius: 3px;
+    opacity: 1;
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: 0.8px;  
-    color: #ffffff;
+    letter-spacing: 0.8px;
+    color: #D62839;
     opacity: 1;
 }
 .nav-btn a:hover {
     text-decoration: none;
-    background: #FFFFFF 0% 0% no-repeat;
-    border: 1px solid #D62839;
-    border-radius: 3px;
-    color: #D62839;
+    background: #D62839 0% 0% no-repeat padding-box;
+    color: #ffffff;
 }
 .mobile-menu-btn {
     display: none;
@@ -224,8 +255,9 @@ Author: Bryce Mullican, Ryan Jones
 }
 .code-bg-2 {
     margin-bottom: 50px;
+	margin-left: -350px;
     overflow: hidden;
-    width: 350px;
+    width: 700px;
     height: 92px;
     background: #5CC4CA 0% 0% no-repeat padding-box;
     border-radius: 3px;
@@ -286,7 +318,7 @@ Author: Bryce Mullican, Ryan Jones
 }
 /* Grad Rules */
 .grad-header-rules {
-    margin-top: 55px;
+    margin-top: 75px;
     margin-bottom: 20px;
 }
 .grad-header-rules h2 {
@@ -297,8 +329,8 @@ Author: Bryce Mullican, Ryan Jones
     opacity: 1;
 }
 .grad-slider-bg {
-    margin-top: 110px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     width: 100%;
     height: 15px;
     background: #20BF55 0% 0% no-repeat padding-box;
@@ -306,8 +338,8 @@ Author: Bryce Mullican, Ryan Jones
 }
 .grad-card {
     margin-top: -75px;
-    width: 494px;
-    height: 175px;
+/*     width: 494px; */
+    height: auto;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 8px 16px #63676B59;
     border: 0.75px solid #797B89;
@@ -317,6 +349,7 @@ Author: Bryce Mullican, Ryan Jones
 .grad-card img {
     margin: 15px 16px 85px 15px;
     float:left;
+	border-radius: 10px;
     width: 75px;
     height: 75px;  
     opacity: 1;
@@ -337,10 +370,11 @@ Author: Bryce Mullican, Ryan Jones
     font-size: 15px;
     letter-spacing: 0;
     opacity: 1;
+	padding-right: 5px
 }
 .grad-slider-dots p {
     margin-top: 20px;
-    margin-left: -40px;
+/*     margin-left: -40px; */
     text-align: center;
     font-size: 42px;
     letter-spacing: 4.21px;
@@ -349,7 +383,8 @@ Author: Bryce Mullican, Ryan Jones
 }
 /* Grad Hirers */
 .grad-hirer-rules {
-    margin-bottom: 60px;
+	margin-top: 75px;
+    margin-bottom: 75px;
     text-align: center;
 }
 .grad-hirer-rules p {
@@ -389,6 +424,7 @@ Author: Bryce Mullican, Ryan Jones
     background: #F7F7F7 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+
 .acad-info-rules h2 {
     margin-top: 67px;
     margin-bottom: 25px;
@@ -473,7 +509,27 @@ Author: Bryce Mullican, Ryan Jones
     margin-top: 27px;
     width: 167px;
     height: 491px;
-    background: transparent url('images/keyboard-mouse.png') 0% 0% no-repeat padding-box;
+    background: transparent url('images/keyboard-mouse.jpg') 0% 0% no-repeat padding-box;
+    background-size: contain;
+    /* box-shadow: -4px 2px 7px #3D404380; */
+    opacity: 1;
+}
+
+.desk-items {
+    margin-top: 27px;
+	width: 266px;
+	height: 427px;
+    background: transparent url('images/desk-items.jpg') 0% 0% no-repeat padding-box;
+    background-size: contain;
+    /* box-shadow: -4px 2px 7px #3D404380; */
+    opacity: 1;
+}
+
+.note-pen{
+    margin-top: 27px;
+	width: 269px;
+	height: 444px;
+    background: transparent url('images/notebook-pen.jpg') 0% 0% no-repeat padding-box;
     background-size: contain;
     /* box-shadow: -4px 2px 7px #3D404380; */
     opacity: 1;
@@ -482,14 +538,52 @@ Author: Bryce Mullican, Ryan Jones
     transform: matrix(0, 1, -1, 0, 0, 0);
     margin-top: 105px;
 }
-.cost-info {
+.cost-info1 {
     display: inline-block;
     height: 141px;
-    width: 630px;
+    width: 670px;
     background: #20BF55 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-.cost-info p {
+.cost-info1 p {
+    margin-top: 45px;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.cost-info2 {
+    display: inline-block;
+    height: 141px;
+    width: 670px;
+	background: #D62839 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.cost-info2 p {
+    margin-top: 45px;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.cost-info3 {
+    display: inline-block;
+    height: 141px;
+    width: 670px;
+	background: #20BF55 0% 0% no-repeat padding-box;    
+	opacity: 1;
+}
+.cost-info3 p {
     margin-top: 45px;
     margin-left: 100px;
     text-align: left;
@@ -503,16 +597,52 @@ Author: Bryce Mullican, Ryan Jones
 .skill-info-bg {
     transform: matrix(0, 1, -1, 0, 0, 0);
     margin-top: -281px;
-    margin-left: 280px;
 }
-.skill-info {
+.skill-info1 {
     display: inline-block;
     height: 140px;
-    width: 630px;
+    width: 670px;
     background: #D62839 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-.skill-info p {
+.skill-info1 p {
+    margin-top: 45px;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.skill-info2 {
+    display: inline-block;
+    height: 140px;
+    width: 670px;
+	background: #00A3AD 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.skill-info2 p {
+    margin-top: 45px;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.skill-info3 {
+    display: inline-block;
+    height: 140px;
+    width: 670px;
+	background: #00A3AD 0% 0% no-repeat padding-box;    
+	opacity: 1;
+}
+.skill-info3 p {
     margin-top: 45px;
     margin-left: 100px;
     text-align: left;
@@ -735,7 +865,10 @@ Author: Bryce Mullican, Ryan Jones
     color: #2D3047;
     opacity: 1;
 }
-.donation-rules a {
+.donation-rules input {
+	margin-top: 75px;
+}
+/* .donation-rules a {
     display: inline-block;
     margin-top: 110px;
     margin-bottom: 30px;
@@ -744,8 +877,8 @@ Author: Bryce Mullican, Ryan Jones
     box-shadow: 0px 8px 15px #63676B59;
     border-radius: 3px;
     opacity: 1;
-}
-.donation-rules a {
+} */
+/* .donation-rules input {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -753,7 +886,7 @@ Author: Bryce Mullican, Ryan Jones
     letter-spacing: 0.8px;
     color: #FFFFFF;
     opacity: 1;
-}
+} */
 .donation-rules img {
     display: block;
     width: 218px;
@@ -983,8 +1116,8 @@ Author: Bryce Mullican, Ryan Jones
 }
 .alumni-box a {
     display: inline-block;
-    margin-top: 27px;
     margin-right: 5px;
+	color: #00A3AD;
 }
 .alumni-photo-1 {
     width: 100%;
@@ -1156,6 +1289,7 @@ Author: Bryce Mullican, Ryan Jones
     color: #3D4043;
     opacity: 1;
 }
+
 /* Responsive */
 @media (max-width: 1113px) {
     .nav-menu li {
@@ -1190,10 +1324,11 @@ Author: Bryce Mullican, Ryan Jones
         margin-right: 10px;
     }
 }
+
 @media (max-width: 991px) {
     .nav-rules img {
         width: 145px;
-        height: 52px;
+        height: 48px;
     }
     .nav-btn a {
         font-size: 11px;
@@ -1341,9 +1476,9 @@ Author: Bryce Mullican, Ryan Jones
         width: 500px;
         margin-right: auto;
     }
-    .donation-rules a {
+    .donation-rules input {
         margin-top: 20px;
-        margin-left: 235px;
+    	margin-left: 88px;
     }
     .donation-rules img {
         margin-bottom: 80px;
@@ -1380,8 +1515,8 @@ Author: Bryce Mullican, Ryan Jones
         margin-right: 19px;
         width: 115px;
     }
-
 }
+
 @media (min-width: 320px) and (max-width: 575px) {
     .nav-rules img {
         width: 83px;
@@ -1483,7 +1618,8 @@ Author: Bryce Mullican, Ryan Jones
         text-align: center;
     }
     .skim-info {
-        width: 280px;
+        width: auto;
+		padding-right: 20px;
         height: 512px;
     }
     .acad-info-rules {
@@ -1587,10 +1723,10 @@ Author: Bryce Mullican, Ryan Jones
         width: 115px;
     }
 }
+
 @media (max-width: 991px) {
     .nav-menu li {
         font-size: 14px;
-
     }
     .key-mouse {
         margin-left: 150px;
@@ -1629,8 +1765,62 @@ Author: Bryce Mullican, Ryan Jones
         height: 55px;
     }
 }
+
 @media (max-width: 767px) {
-    
+	.acad-info-rules {
+		padding-left: 20px;
+	}
+}
+
+@media (min-width: 1240px){
+	/* Academy Info */
+	.acad-info-rules {
+		padding-left: 108px;
+	}
+	.cost-info-bg {
+		margin-left: 10px;
+	}
+
+	.skill-info-bg {
+		margin-left: 290px;
+	}
+
+}
+
+@media (min-width: 1452px){
+	/* Academy Info */
+	.acad-info-rules {
+		padding-left: 50px;
+	}
+	.cost-info-bg {
+/* 		margin-left: 123px;
+		width: 350px; */
+		position: absolute;
+    	right: -110px;
+    	top: 150px;
+	}
+
+	.skill-info-bg {
+/* 		margin-left: 300px;
+		width: 325px */
+		position: absolute;
+    	right: -250px;
+    	top: 540px;
+	}
+}
+
+@media (max-width: 1239px ) and (min-width: 768px){
+	/* Academy Info */
+	.acad-info-rules {
+		padding-left: 80px;
+	}
+	.cost-info-bg {
+		margin-left: -60px;
+	}
+
+	.skill-info-bg {
+		margin-left: 220px;
+	}
 }
 
 .meetcoderslider {
@@ -1655,3 +1845,89 @@ Author: Bryce Mullican, Ryan Jones
     float: left;
     margin-right: 15px;
 }
+
+
+/* Slider Style */
+.sa_owl_theme .owl-dots .owl-dot {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.sa_owl_theme .owl-dots .owl-dot span {
+	  background: #bbbbbb !important;
+      width: 10px;
+      height: 10px;
+      position: relative;
+      text-align: center;
+      transform: rotate(20deg);
+	  border-radius: 0% !important;
+	  border-top-left-radius: 0% !important;
+	  border-top-right-radius: 0% !important;
+	  border-bottom-right-radius: 0% !important;
+	  border-bottom-left-radius: 0% !important;
+}
+
+.sa_owl_theme .owl-dots .owl-dot span:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 10px;
+      width: 10px;
+	  background: #bbbbbb !important;
+      transform: rotate(135deg);
+	  border-radius: 0% !important;
+	  border-top-left-radius: 0% !important;
+	  border-top-right-radius: 0% !important;
+	  border-bottom-right-radius: 0% !important;
+	  border-bottom-left-radius: 0% !important;
+}
+
+.sa_owl_theme .owl-dots .active span {
+	  background: black !important;
+      width: 10px;
+      height: 10px;
+      position: relative;
+      text-align: center;
+      transform: rotate(20deg);
+	  border-radius: 0% !important;
+	  border-top-left-radius: 0% !important;
+	  border-top-right-radius: 0% !important;
+	  border-bottom-right-radius: 0% !important;
+	  border-bottom-left-radius: 0% !important;
+}
+
+.sa_owl_theme .owl-dots .active span:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 10px;
+      width: 10px;
+	  background: black !important;
+      transform: rotate(135deg);
+	  border-radius: 0% !important;
+	  border-top-left-radius: 0% !important;
+	  border-top-right-radius: 0% !important;
+	  border-bottom-right-radius: 0% !important;
+	  border-bottom-left-radius: 0% !important;
+}
+
+.sa_owl_theme .owl-dots .active span:hover {
+	background: black !important;
+}
+
+.white .sa_owl_theme .owl-nav .owl-next {
+    border-radius: 50%;
+    max-height: 0px !important;
+    padding: 20px !important;
+    background-size: 15px 20px !important
+}
+
+.white .sa_owl_theme .owl-nav .owl-prev {
+    border-radius: 50%;
+    max-height: 0px !important;
+    padding: 20px !important;
+    background-size: 12px 20px !important
+}
+

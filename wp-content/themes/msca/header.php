@@ -7,9 +7,9 @@
     <title><?php wp_title(); ?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -18,10 +18,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-sm-2 d-none d-md-block">
-                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpeg" alt="Logo"></a>
+                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" alt="Logo"></a>
                 </div>
                 <div class="col-sm-2 col-5 d-md-none">
-                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/mobilelogo.png" alt="Logo"></a>
+                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/mobilelogo_optimized.png" alt="Logo"></a>
                 </div>
                 <div class="col-sm-6 d-none d-lg-block d-md-block">
                     <div class="nav-menu">
@@ -31,7 +31,7 @@
                                     <a href="#" onclick="dropDown(); changeIcon()" class="dropbtn" >The Academies <i id="caretChange" class="fa fa-caret-down"></i></a>
                                 </div>
                             </li>
-                            <li><a href="/students">Students</a></li>
+                            <li><a href="/students">Coders</a></li>
                             <li><a href="/news">News</a></li>
                         </ul>
                     </div>
@@ -57,7 +57,8 @@
                             <li><a href="/about-us">About Us</a> </li>
                             <li><a href="/alumni">Alumni</a></li>
                             <li><a href="/principles-values">Our Values</a></li>
-                            <li><a href="/board-of-directors-officers">Board of Directories</a></li>
+                            <li><a href="/board-of-directors-officers">Board of Directors & Officers</a></li>
+							<li><a href="/staff">Instructors</a></li>
                             <li><a href="/employer-evaluations">Employer Evaluations</a></li>
                         </ul>
                     </div>

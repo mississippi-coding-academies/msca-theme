@@ -67,3 +67,178 @@ set_post_thumbnail_size( 250, 250, true );
 // Add image sizes as needed
 add_image_size( 'standard-vertical', 526, 670, true );
 add_image_size( 'standard-horizontal', 670, 526, true );
+
+function get_students() {
+    // Query Arguments
+    
+	if (isset($_GET['location']) && $_GET['location'] == 'Jackson'){
+		$args = array(
+			'numberposts' => -1,
+			'post_type' => 'student',
+			'meta_query' => [
+				[
+					'key' => 'active',
+					'value' => '1',
+					'compare' => '='
+				],
+				[
+					'key' => 'alumni',
+					'value' => '0',
+					'compare' => '='
+				],
+				[
+					'key' => 'location',
+					'value' => 'Jackson',
+					'compare' => '='
+				]
+			]
+		);
+	}
+	else if (isset($_GET['location']) && $_GET['location'] == 'Starkville'){
+		$args = array(
+			'numberposts' => -1,
+			'post_type' => 'student',
+			'meta_query' => [
+				[
+					'key' => 'active',
+					'value' => '1',
+					'compare' => '='
+				],
+				[
+					'key' => 'alumni',
+					'value' => '0',
+					'compare' => '='
+				],
+				[
+					'key' => 'location',
+					'value' => 'Starkville',
+					'compare' => '='
+				]
+			]
+		);
+	}
+	else {
+		$args = array(
+			'numberposts' => -1,
+			'post_type' => 'student',
+			'meta_query' => [
+				[
+					'key' => 'active',
+					'value' => '1',
+					'compare' => '='
+				],
+				[
+					'key' => 'alumni',
+					'value' => '0',
+					'compare' => '='
+				]
+			]
+		);
+	}
+	
+	$response = get_posts( $args );
+	foreach ($response as $value) {
+		$thumb = get_the_post_thumbnail($value->ID, standard-vertical );
+		$location = get_post_meta( $value->ID, 'location', true );
+		
+		$value->post_thumb = $thumb;
+ 		$value->post_location = ucfirst($location);
+	}
+
+    echo json_encode($response);
+
+    exit; // leave ajax call
+}
+
+// Fire AJAX action for both logged in and non-logged in users
+add_action('wp_ajax_get_students', 'get_students');
+add_action('wp_ajax_nopriv_get_students', 'get_students');
+
+
+function get_alumni() {
+    // Query Arguments
+    
+	if (isset($_GET['location']) && $_GET['location'] == 'Jackson'){
+		$args = array(
+			'numberposts' => -1,
+			'post_type' => 'student',
+			'meta_query' => [
+				[
+					'key' => 'active',
+					'value' => '1',
+					'compare' => '='
+				],
+				[
+					'key' => 'alumni',
+					'value' => '1',
+					'compare' => '='
+				],
+				[
+					'key' => 'location',
+					'value' => 'Jackson',
+					'compare' => '='
+				]
+			]
+		);
+	}
+	else if (isset($_GET['location']) && $_GET['location'] == 'Starkville'){
+		$args = array(
+			'numberposts' => -1,
+			'post_type' => 'student',
+			'meta_query' => [
+				[
+					'key' => 'active',
+					'value' => '1',
+					'compare' => '='
+				],
+				[
+					'key' => 'alumni',
+					'value' => '1',
+					'compare' => '='
+				],
+				[
+					'key' => 'location',
+					'value' => 'Starkville',
+					'compare' => '='
+				]
+			]
+		);
+	}
+	else {
+		$args = array(
+			'numberposts' => -1,
+			'post_type' => 'student',
+			'meta_query' => [
+				[
+					'key' => 'active',
+					'value' => '1',
+					'compare' => '='
+				],
+				[
+					'key' => 'alumni',
+					'value' => '1',
+					'compare' => '='
+				]
+			]
+		);
+	}
+	
+	$response = get_posts( $args );
+	foreach ($response as $value) {
+		$thumb = get_the_post_thumbnail($value->ID, standard-vertical );
+		$location = get_post_meta( $value->ID, 'location', true );
+		
+		$meta = get_post_meta( $value->ID );
+		$value->post_thumb = $thumb;
+		$value->meta = $meta;
+ 		$value->post_location = ucfirst($location);
+	}
+
+    echo json_encode($response);
+
+    exit; // leave ajax call
+}
+
+// Fire AJAX action for both logged in and non-logged in users
+add_action('wp_ajax_get_alumni', 'get_alumni');
+add_action('wp_ajax_nopriv_get_alumni', 'get_alumni');
